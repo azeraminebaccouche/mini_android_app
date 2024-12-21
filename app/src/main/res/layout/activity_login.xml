@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_pg">
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="24dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rounded_background_white"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/loginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#000000"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="16dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/nameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#7D7D7D"
+            android:layout_marginBottom="4dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="10dp"
+            android:hint="Enter Name"
+            android:textColorHint="#B4B4B4"
+            android:textColor="#000000"
+            android:inputType="textPersonName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#7D7D7D"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="10dp"
+            android:hint="Enter Password"
+            android:textColorHint="#B4B4B4"
+            android:textColor="#000000"
+            android:inputType="textPassword" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="321dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_button_black"
+            android:gravity="center"
+            android:text="LOGIN"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/forgotPasswordText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Forgot Your Password?"
+            android:textColor="#7D7D7D"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginWithNumberButton"
+            android:layout_width="321dp"
+            android:layout_height="99dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_button_tan"
+            android:gravity="center"
+            android:text="LOGIN WITH NUMBER"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t have an account? "
+                android:textColor="#7D7D7D" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
